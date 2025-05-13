@@ -1,0 +1,42 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f2f2f2, #e6ecf0);
+  transition: background 0.3s ease;
+}
+
+@keyframes flash {
+  0% { background-color: #dc3545; }
+  50% { background-color: #ff6b6b; }
+  100% { background-color: #dc3545; }
+}
+
+.flash-alert {
+  animation: flash 1s infinite;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e !important;
+  border-color: #333;
+  color: #f1f1f1;
+}
+
+.dark-mode .alert {
+  color: #ffffff !important;
+}
+
+/* Button enhancements */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
